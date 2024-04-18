@@ -13,9 +13,9 @@ public class Main extends javax.swing.JFrame {
     public Main() {
         initComponents();
         getContentPane().setBackground(new Color(240, 240, 240));
-        navigationBar1.addItem(new ImageIcon(getClass().getResource("/com/raven/icon/item1.png")));
-        navigationBar1.addItem(new ImageIcon(getClass().getResource("/com/raven/icon/item2.png")));
-        navigationBar1.addItem(new ImageIcon(getClass().getResource("/com/raven/icon/item3.png")));
+        navigationBar1.addItem(new ImageIcon(getClass().getResource("/com/raven/icon/aluna.png")));
+        navigationBar1.addItem(new ImageIcon(getClass().getResource("/com/raven/icon/professor.png")));
+        navigationBar1.addItem(new ImageIcon(getClass().getResource("/com/raven/icon/livro-didatico.png")));
         navigationBar1.addEvent(new EventNavigationBar() {
             @Override
             public void beforeSelected(int index) {
