@@ -6,6 +6,8 @@
 package com.raven.form;
 
 import com.raven.transitions.TransitionsForm;
+import java.awt.Color;
+import java.awt.Font;
 
 /**
  *
@@ -18,6 +20,12 @@ public class Form1 extends TransitionsForm {
      */
     public Form1() {
         initComponents();
+        setBackground(new Color(0,0,0,0));
+        
+        jTable1.getTableHeader().setFont(new Font("Segoe UI", Font.BOLD, 12));
+        jTable1.getTableHeader().setOpaque(false);
+        jTable1.getTableHeader().setForeground(new Color(41,41,41));
+        jTable1.setRowHeight(25);
     }
 
     /**
@@ -42,17 +50,26 @@ public class Form1 extends TransitionsForm {
         jTextField4 = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jTextField5 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
+        jTextField6 = new javax.swing.JTextField();
+        jButton5 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
 
         setLayout(null);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/form/Design sem nome (1).png"))); // NOI18N
         add(jLabel1);
-        jLabel1.setBounds(40, 20, 126, 100);
+        jLabel1.setBounds(10, 10, 126, 100);
 
+        jTable1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTable1.setForeground(new java.awt.Color(41, 41, 41));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -72,42 +89,54 @@ public class Form1 extends TransitionsForm {
                 return types [columnIndex];
             }
         });
+        jTable1.setFocusable(false);
+        jTable1.setGridColor(new java.awt.Color(41, 41, 41));
+        jTable1.setRowHeight(25);
+        jTable1.setSelectionBackground(new java.awt.Color(244, 195, 58));
+        jTable1.setSelectionForeground(new java.awt.Color(41, 41, 41));
+        jTable1.setShowHorizontalLines(true);
         jScrollPane1.setViewportView(jTable1);
 
         add(jScrollPane1);
-        jScrollPane1.setBounds(290, 170, 690, 402);
+        jScrollPane1.setBounds(290, 170, 690, 410);
 
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel2.setText("RA:");
         add(jLabel2);
-        jLabel2.setBounds(40, 160, 40, 20);
+        jLabel2.setBounds(40, 130, 40, 20);
 
+        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel3.setText("Nome:");
         add(jLabel3);
-        jLabel3.setBounds(40, 220, 50, 16);
+        jLabel3.setBounds(40, 180, 50, 14);
 
+        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel4.setText("Email:");
         add(jLabel4);
-        jLabel4.setBounds(40, 340, 32, 16);
+        jLabel4.setBounds(40, 280, 50, 14);
 
+        jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel5.setText("Telefone:");
         add(jLabel5);
-        jLabel5.setBounds(40, 280, 60, 16);
+        jLabel5.setBounds(40, 230, 60, 14);
 
+        jTextField1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
         add(jTextField1);
-        jTextField1.setBounds(40, 360, 190, 22);
+        jTextField1.setBounds(40, 300, 190, 20);
 
+        jTextField2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
             }
         });
         add(jTextField2);
-        jTextField2.setBounds(40, 180, 190, 22);
+        jTextField2.setBounds(40, 150, 190, 20);
 
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -115,47 +144,93 @@ public class Form1 extends TransitionsForm {
             }
         });
         add(jTextField3);
-        jTextField3.setBounds(40, 240, 190, 22);
+        jTextField3.setBounds(40, 200, 190, 22);
 
+        jTextField4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField4ActionPerformed(evt);
             }
         });
         add(jTextField4);
-        jTextField4.setBounds(40, 300, 190, 22);
+        jTextField4.setBounds(40, 250, 190, 20);
 
+        jLabel6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel6.setText("Endereço:");
         add(jLabel6);
-        jLabel6.setBounds(40, 400, 70, 16);
+        jLabel6.setBounds(40, 330, 70, 14);
 
+        jTextField5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField5ActionPerformed(evt);
             }
         });
         add(jTextField5);
-        jTextField5.setBounds(40, 420, 190, 22);
-
-        jButton2.setBackground(new java.awt.Color(255, 255, 153));
-        jButton2.setText("Atualizar");
-        add(jButton2);
-        jButton2.setBounds(810, 130, 80, 30);
-
-        jButton3.setBackground(new java.awt.Color(255, 153, 153));
-        jButton3.setText("Deletar");
-        add(jButton3);
-        jButton3.setBounds(900, 130, 75, 30);
-
-        jButton4.setBackground(new java.awt.Color(153, 255, 153));
-        jButton4.setText("Adicionar");
-        add(jButton4);
-        jButton4.setBounds(710, 130, 90, 30);
+        jTextField5.setBounds(40, 350, 190, 20);
 
         jLabel7.setFont(new java.awt.Font("Arial Black", 0, 64)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(41, 41, 41));
         jLabel7.setText("Alunos");
         add(jLabel7);
-        jLabel7.setBounds(730, 20, 250, 70);
+        jLabel7.setBounds(400, 0, 240, 60);
+
+        jTextField6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField6ActionPerformed(evt);
+            }
+        });
+        add(jTextField6);
+        jTextField6.setBounds(290, 130, 240, 30);
+
+        jButton5.setBackground(new java.awt.Color(41, 41, 41));
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/sair.png"))); // NOI18N
+        jButton5.setText("Exit");
+        jButton5.setMargin(new java.awt.Insets(2, 1, 3, 14));
+        add(jButton5);
+        jButton5.setBounds(910, 10, 90, 30);
+
+        jLabel8.setBackground(new java.awt.Color(51, 255, 51));
+        jLabel8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        add(jLabel8);
+        jLabel8.setBounds(70, 400, 130, 140);
+
+        jLabel9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel9.setText("Foto:");
+        add(jLabel9);
+        jLabel9.setBounds(40, 380, 70, 14);
+
+        jButton6.setBackground(new java.awt.Color(204, 204, 204));
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/refresh.png"))); // NOI18N
+        add(jButton6);
+        jButton6.setBounds(940, 130, 40, 30);
+
+        jButton7.setBackground(new java.awt.Color(255, 255, 204));
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/atualizar.png"))); // NOI18N
+        add(jButton7);
+        jButton7.setBounds(840, 130, 40, 30);
+
+        jButton8.setBackground(new java.awt.Color(255, 204, 204));
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/erro.png"))); // NOI18N
+        add(jButton8);
+        jButton8.setBounds(890, 130, 40, 30);
+
+        jButton9.setBackground(new java.awt.Color(204, 255, 204));
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/adicionar.png"))); // NOI18N
+        add(jButton9);
+        jButton9.setBounds(790, 130, 40, 30);
+
+        jButton10.setBackground(new java.awt.Color(41, 41, 41));
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/lupa.png"))); // NOI18N
+        add(jButton10);
+        jButton10.setBounds(540, 130, 40, 30);
+
+        jButton11.setBackground(new java.awt.Color(41, 41, 41));
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/download.png"))); // NOI18N
+        add(jButton11);
+        jButton11.setBounds(95, 550, 80, 30);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -178,11 +253,19 @@ public class Form1 extends TransitionsForm {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
 
+    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField6ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -190,6 +273,8 @@ public class Form1 extends TransitionsForm {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
@@ -197,5 +282,6 @@ public class Form1 extends TransitionsForm {
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
     // End of variables declaration//GEN-END:variables
 }
