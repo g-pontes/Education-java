@@ -3,8 +3,6 @@ package com.raven.main;
 import com.raven.form.Form1;
 import com.raven.form.Form2;
 import com.raven.form.Form3;
-import com.raven.form.Form4;
-import com.raven.form.Form5;
 import com.raven.swing.EventNavigationBar;
 import com.raven.swing.NavigationBackgroundColor;
 import java.awt.Color;
@@ -18,8 +16,6 @@ public class Main extends javax.swing.JFrame {
         navigationBar1.addItem(new ImageIcon(getClass().getResource("/com/raven/icon/item1.png")));
         navigationBar1.addItem(new ImageIcon(getClass().getResource("/com/raven/icon/item2.png")));
         navigationBar1.addItem(new ImageIcon(getClass().getResource("/com/raven/icon/item3.png")));
-        navigationBar1.addItem(new ImageIcon(getClass().getResource("/com/raven/icon/item4.png")));
-        navigationBar1.addItem(new ImageIcon(getClass().getResource("/com/raven/icon/item5.png")));
         navigationBar1.addEvent(new EventNavigationBar() {
             @Override
             public void beforeSelected(int index) {
@@ -29,10 +25,6 @@ public class Main extends javax.swing.JFrame {
                     panelTransaction1.display(new Form2(), navigationBar1.getAnimator());
                 } else if (index == 2) {
                     panelTransaction1.display(new Form3(), navigationBar1.getAnimator());
-                } else if (index == 3) {
-                    panelTransaction1.display(new Form4(), navigationBar1.getAnimator());
-                } else if (index == 4) {
-                    panelTransaction1.display(new Form5(), navigationBar1.getAnimator());
                 }
             }
 
@@ -46,8 +38,6 @@ public class Main extends javax.swing.JFrame {
         nb.addColor(0, new Color(153, 153, 255));
         nb.addColor(1, new Color(153, 225, 255));
         nb.addColor(2, new Color(255, 153, 218));
-        nb.addColor(3, new Color(126, 209, 132));
-        nb.addColor(4, new Color(226, 222, 131));
         navigationBar1.setnavigationBackgroundColor(nb);
     }
 
