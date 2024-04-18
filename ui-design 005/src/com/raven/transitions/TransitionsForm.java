@@ -8,6 +8,7 @@ import org.jdesktop.animation.timing.Animator;
 import org.jdesktop.animation.timing.TimingTarget;
 import org.jdesktop.animation.timing.TimingTargetAdapter;
 
+
 public class TransitionsForm extends javax.swing.JPanel {
 
     public void setAlpha(float alpha) {

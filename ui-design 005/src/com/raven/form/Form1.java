@@ -8,6 +8,7 @@ package com.raven.form;
 import com.raven.transitions.TransitionsForm;
 import java.awt.Color;
 import java.awt.Font;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -189,6 +190,11 @@ public class Form1 extends TransitionsForm {
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/raven/icon/sair.png"))); // NOI18N
         jButton5.setText("Exit");
         jButton5.setMargin(new java.awt.Insets(2, 1, 3, 14));
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         add(jButton5);
         jButton5.setBounds(910, 10, 90, 30);
 
@@ -257,6 +263,13 @@ public class Form1 extends TransitionsForm {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField6ActionPerformed
 
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        int a = JOptionPane.showConfirmDialog(this, "Voce que sair agora?", "Select", JOptionPane.YES_NO_OPTION);
+        if(a == 0){
+            System.exit(0);
+        }
+    }//GEN-LAST:event_jButton5ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton10;
@@ -284,4 +297,5 @@ public class Form1 extends TransitionsForm {
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     // End of variables declaration//GEN-END:variables
+   
 }
