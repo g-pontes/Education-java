@@ -43,7 +43,7 @@
           <Color blue="4f" green="4f" red="4f" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="Form 3"/>
+        <Property name="text" type="java.lang.String" value="Cursos/Material-did&#xe1;tico"/>
       </Properties>
     </Component>
   </SubComponents>

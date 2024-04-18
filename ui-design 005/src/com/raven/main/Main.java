@@ -35,9 +35,9 @@ public class Main extends javax.swing.JFrame {
         });
         NavigationBackgroundColor nb = new NavigationBackgroundColor();
         nb.apply(getContentPane());
-        nb.addColor(0, new Color(153, 153, 255));
-        nb.addColor(1, new Color(153, 225, 255));
-        nb.addColor(2, new Color(255, 153, 218));
+        nb.addColor(0, new Color(240, 240, 240));
+        nb.addColor(1, new Color(240, 240, 240));
+        nb.addColor(2, new Color(240, 240, 240));
         navigationBar1.setnavigationBackgroundColor(nb);
     }
 
@@ -87,7 +87,7 @@ public class Main extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        navigationBar1.initSelectedIndex(2);
+        navigationBar1.initSelectedIndex(0);
     }//GEN-LAST:event_formWindowOpened
 
     /**

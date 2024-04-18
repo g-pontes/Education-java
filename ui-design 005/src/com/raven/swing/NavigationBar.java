@@ -41,8 +41,8 @@ public class NavigationBar extends javax.swing.JPanel {
 
     public NavigationBar() {
         setOpaque(false);
-        setBackground(Color.WHITE);
-        setForeground(new Color(71, 161, 225));
+        setBackground(new Color(41, 41, 41));
+        setForeground(new Color(244, 195, 58));
         item = new ArrayList<>();
         events = new ArrayList<>();
         addMouseListener(new MouseAdapter() {
